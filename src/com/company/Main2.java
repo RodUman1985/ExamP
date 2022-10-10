@@ -12,7 +12,7 @@ public class Main2 {
       int rez1=0;
       int rez2=0;
 
-        while (rez1<10 || rez2<10) {
+        while (rez1<10 && rez2<10) {
             FileWriter fw = new FileWriter("1.txt");
             Random rand = new Random();
 
@@ -102,13 +102,13 @@ public class Main2 {
             }
         }
         if (rez1 > rez2) {
-            System.out.println("Победил игрок 1");
+            System.out.println("Победил игрок 1   "   +rez1+"   "+rez2);
         }
         if (rez1 < rez2) {
-            System.out.println("Победил игрок 2");
+            System.out.println("Победил игрок 2   "+rez1+"   "+rez2);
         }
         if (rez1 == rez2) {
-            System.out.println("Победила дружба");
+            System.out.println("Победила дружба   "+rez1+"  "+rez2);
         }
         }
 
